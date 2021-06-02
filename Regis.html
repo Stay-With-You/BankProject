@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册界面</title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+				font-family: "microsoft yahei";
+			}
+			html,
+			body {
+				/*网页背景配置*/
+				background-image: url(img/01.png);
+				background-size: 100% 100%;
+				height: 100%;
+			}
+			.Regis {
+				/*登录页面中间白框的属性配置*/
+				background-color: rgba(255, 255, 255, .9);
+				top: 16%;
+				bottom: 16%;
+				left: 25%;
+				right: 25%;
+				position: absolute;
+				border-radius: 10px;
+			}
+			/* 中间白色框体中各元素的整体位置布局 */
+			.title,
+			.UserName,
+			.Password,
+			.PwdAgain,
+			.regis,
+			.Sex,
+			.telNumber,
+			.tips {
+				position: absolute;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			/* 文本框的属性配置 */
+			.uname,
+			.upwd,
+			.pwda,
+			.teln,
+			.wmsex {
+				background-color: rgba(255, 248, 231, 1.0);
+				height: 35px;
+				border: 0px;
+				border-radius: 6px;
+				width: 56%;
+				box-sizing: border-box;
+			}
+			button {
+				/*注册登录按钮的属性配置*/
+				background-color: #467fe6;
+				height: 35px;
+				width: 32%;
+				border: 0px;
+				border-radius: 5px;
+				color: #FFFFFF;
+				font-size: 18px;
+			}
+			.title {
+				top: 4%;
+				bottom: 87.5%;
+				text-align: center;
+				font-size: 26px;
+				font-weight: bolder;
+			}
+			.UserName,
+			.Password,
+			.PwdAgain,
+			.Sex,
+			.telNumber{
+				left: 16%;
+				font-weight: bolder;
+				padding-top: 10px;
+				font-size: 13px;
+				line-height: 2px;
+				box-sizing: border-box;
+			}
+			.UserName {
+				top: 13.5%;
+				bottom: 75%;
+			}
+			.Password {
+				top: 25%;
+				bottom: 62.5%;
+			}
+			.PwdAgain {
+				top: 37.5%;
+				bottom: 50%;
+			}
+			.Sex {
+				top: 50%;
+				bottom: 37.5%;
+				font-size: 14px;
+			}
+			.telNumber {
+				top: 62.5%;
+				bottom: 23%;
+				font-size: 14px;
+			}
+			.regis {
+				top: 75%;
+				bottom: 12.5%;
+				text-align: center;
+				padding-top: 15px;
+				font-size: 14px;
+			}
+			.tips {
+				top: 87.5%;
+				bottom: 0%;
+				text-align: center;
+				padding-top: 12px;
+				font-size: 14px;
+				color: #AAAAAA;
+			}
+			.regis button:hover {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="Regis">
+			<div class="title">
+				广工银行网上银行
+			</div>
+			<div class="UserName">
+				用户名：
+				<input type="text" class="uname" name="unamee" placeholder=" 请输入想要创建的用户名" required="required"/><br />
+			</div>
+			<div class="Password">
+				密　码：
+				<input type="text" class="upwd" name="upwdd" placeholder=" 请输入密码" required="required"/><br />
+			</div>
+			<div class="PwdAgain">
+				密　码：
+				<input type="text" class="pwda" name="pwdaa" placeholder=" 再次确认密码,两次密码需一致" required="required"/><br />
+			</div>
+			<div class="Sex">
+				性　别：
+				<input type="text" class="wmsex" name="wmsexx" placeholder=" 请输入性别(‘男’或‘女’)" required="required"><br />
+			</div>
+			<div class="telNumber">
+				手机号：
+				<input type="text" class="teln" name="telnn" placeholder=" 请输入手机号码" required="required"/><br />
+			</div>
+			<div class="regis">
+				<button type="button">
+					注册
+				</button>
+			</div>
+			<div class="tips" >
+				欢迎使用广工银行网上银行，请按要求注册
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
